@@ -10,7 +10,7 @@ for i in os.listdir():
     except:
         continue
 
-for i in range(10000000):
+for i in range(1000000):
     if i not in listorg:
         sc = ImageGrab.grab()
         sc.save(f"{i}.png")
