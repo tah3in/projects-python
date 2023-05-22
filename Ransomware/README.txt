@@ -2,7 +2,7 @@ This program can lock all files in a specific format
 
 in current situation:
 
-It opens text files, encrypts the contents and saves their password in a new file of the same name with the extension Keylogger.
+It opens text files, encrypts the contents and saves their token in a new file of the same name with the extension Keylogger.
 
 The key of the encrypted files is stored in a file called Ahmadi
 
