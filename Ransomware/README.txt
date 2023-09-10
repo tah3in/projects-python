@@ -1,12 +1,15 @@
-This program can lock all files in a specific format
+This program can lock any files
 
 in current situation:
 
-It opens text files, encrypts the contents and saves their token in a new file of the same name with the extension Keylogger.
+When encryption.py is run, all files with the extension .txt will be encoded in this directory
+Every file that is coded contains a token that is specific to that file and a key that is for all the txt files in this directory.
 
-The key of the encrypted files is stored in a file called Ahmadi
+It opens text files, encrypts the contents and saves each file's special token in a new file with the same name  with the extension .Keylogger.
 
-If you do not put the password in the new file, the files cannot be recovered for the victim
+The key of the encrypted files is stored in a file called key_Files.txt
+
+If you do not have the token of each file and the key, you cannot decrypt any file.
 
 decrypt requires two things :
 1. token : Each file has its own token
