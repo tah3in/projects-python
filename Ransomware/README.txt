@@ -14,3 +14,5 @@ If you do not have the token of each file and the key, you cannot decrypt any fi
 decrypt requires two things :
 1. token : Each file has its own token
 2. The key that is the same for all encrypted files
+
+If you want to encode other formats such as photos, videos, and zip, you must change the desired_format inside the codes.
