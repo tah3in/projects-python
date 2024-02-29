@@ -1,3 +1,0 @@
-@py "config.py" %*
-
-@pause
